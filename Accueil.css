@@ -35,6 +35,13 @@ height: 60px;
     box-shadow:
     0 8px 30px rgba(140,120,90,0.08),
     inset 0 1px 1px rgba(255,255,255,0.5);
+
+      transition: transform 0.8s ease; /* Animation fluide de la mise à l'échelle */
+
+}
+
+nav:hover{
+    transform: scale(1.05);
 }
 
 /*logo*/
@@ -78,6 +85,7 @@ height: 60px;
 }
 
 /* underline*/
+/*https://menuhover.com/*/
 .nav-links a::after{
     content:"";
     position:absolute;
@@ -118,6 +126,16 @@ p{
     font-size:1.1rem;
 }
 
+/*manifeste*/
+
+.Manifeste{
+    background-color: #1f1c19;
+}
+
+.Discipline{
+    background-color: #e5ddd0;
+}
 
 
 
+/*footer*/
