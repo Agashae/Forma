@@ -1,6 +1,7 @@
 *{
     margin:0;
     font-family: "Playfair Display",Georgia,serif;
+    width: 100%;
 }
 
 body{
@@ -38,6 +39,8 @@ height: 60px;
 
       transition: transform 0.8s ease; /* Animation fluide de la mise à l'échelle */
 
+      /*pour qu'elle reste toujours en haut*/
+      position: fixed;
 }
 
 nav:hover{
@@ -58,7 +61,7 @@ nav:hover{
     height:38px;
     border-radius:50%;
 
-
+    /*https://tools.force24.co.uk/box-shadow*/
     box-shadow:
     0 5px 15px rgba(0,0,0,0.08);
 }
@@ -139,3 +142,104 @@ p{
 
 
 /*footer*/
+
+
+
+footer {
+        width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 22px 28px;
+    background: #f4efe6;
+}
+
+ 
+
+.footer-bulle {
+    width: 92%;
+    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 32px;
+        /*https://tools.force24.co.uk/box-shadow*/
+    box-shadow:
+        0 8px 30px rgba(140, 120, 90, 0.08),
+        inset 0 1px 1px rgba(255, 255, 255, 0.5);
+    padding: 48px 52px 32px;
+}
+ 
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(140, 120, 90, 0.15);
+}
+
+ 
+/* Colonne marque */
+.footer-brand .logo {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #2e2a27;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.footer-desc {
+    margin-top: 0;
+    font-size: 0.88rem;
+    color: #7a6f65;
+    line-height: 1.6;
+    max-width: 240px;
+}
+ 
+.footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+ 
+/* Colonnes liens */
+.footer-col-title {
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    color: #5b5148;
+    margin-bottom: 18px;
+}
+
+.footer-col ul a {
+    text-decoration: none;
+    font-size: 0.93rem;
+    color: #5b5148;
+    font-weight: 400;
+    transition: color 0.2s, padding-left 0.2s;
+    display: inline-block;
+}
+ 
+.footer-col ul a:hover {
+    color: #1f1c19;
+    padding-left: 4px;
+}
+ 
+/* Barre copyright */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    color: #9a8e84;
+}
+ 
+.footer-tags {
+    letter-spacing: 0.12em;
+    /* majuscule*/
+    text-transform: uppercase;
+}
